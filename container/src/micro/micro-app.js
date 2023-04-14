@@ -5,7 +5,7 @@ export const microApps = [
     name: 'micro-app',
     entry: 'http://localhost:8081',
     activeRule: '/micro-app',
-    container: '#subapp1', // 子应用挂载的div
+    container: '#subapp1',
     props: {
       routerBase: '/micro-app',
     },

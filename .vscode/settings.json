@@ -2,7 +2,6 @@
   "eslint.workingDirectories": [
     "./main",
     "./sub-vue",
-    "./sub-react",
     "./common"
   ],
   "eslint.enable": true,

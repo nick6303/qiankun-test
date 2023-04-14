@@ -10,7 +10,6 @@
     </div>
     <div class="btns">
       <template v-if="isInQiankun">
-        <button @click="gotoSubReact">从当前子应用内跳转到`sub-react`子应用</button>
         <button @click="openSubVue">独立打开sub-vue子应用</button>
       </template>
       <button @click="changeUsername">改变全局的用户名称</button>
@@ -34,9 +33,6 @@ export default {
   methods: {
     // setGlobalState 是在 /common/src/store/global-register.js中定义的
     ...mapActions('global', ['setGlobalState']),
-    gotoSubReact () {
-      history.pushState(null, 'sub-react', '/sub-react')
-    },
     changeUsername () {
       // 也可通过 store.commit('global/setGlobalState', { user: '李四' }) 进行操作
       this.setGlobalState({

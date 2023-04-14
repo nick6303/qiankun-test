@@ -1,0 +1,23 @@
+{
+  "name": "qiankun-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:app": "cd app && npm start",
+    "start:container": "cd container && npm start",
+    "build": "npm-run-all build:* && bash ./bundle.sh",
+    "build:app": "cd app && npm run build",
+    "build:container": "cd container && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "dependencies": {}
+}

@@ -9,7 +9,7 @@ mkdir ./dist/subapp
 cp -r ./app/dist/ ./dist/subapp/app/
 
 # main基座
-cp -r ./container/dist/ ./dist/container/
+cp -r ./container/dist/ ./
 
 # cd ./dist
 # zip -r mp$(date +%Y%m%d%H%M%S).zip *

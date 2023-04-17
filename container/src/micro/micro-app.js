@@ -3,11 +3,14 @@ import { registerMicroApps, start } from 'qiankun'
 export const microApps = [
   {
     name: 'micro-app',
-    entry: 'http://localhost:8081',
+    entry:
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:8081'
+        : '/mywork/qiankun-example/subapp/app',
     activeRule: '/micro-app',
     container: '#subapp1',
     props: {
-      routerBase: '/micro-app',
+      routerBase: '/#/micro-app',
     },
   },
 ]
